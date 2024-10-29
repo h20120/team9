@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.B.image=ppl1.png
-class.b.image=Wall.jpg
+class.pp.image=anchor.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -23,14 +23,14 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
-target1.name=B
+target1.name=pp
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=b
+target2.name=B
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
