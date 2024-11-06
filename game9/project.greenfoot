@@ -1,14 +1,20 @@
 #Greenfoot project file
+class.B.image=ppl1.png
 class.MyWorld.image=brick.jpg
 class.aaa.image=person.png
 class.f.image=flower2.png
+class.pp.image=anchor.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=581
 package.numDependencies=0
+<<<<<<< HEAD
 package.numTargets=4
+=======
+package.numTargets=5
+>>>>>>> d74baa440ffa8dd387aa9f5ef27b20c8adee379d
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -38,21 +44,39 @@ target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
+<<<<<<< HEAD
 target3.name=f
+=======
+target3.name=B
+>>>>>>> d74baa440ffa8dd387aa9f5ef27b20c8adee379d
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=MyWorld
+=======
+target4.name=f
+>>>>>>> d74baa440ffa8dd387aa9f5ef27b20c8adee379d
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
+<<<<<<< HEAD
+=======
+target5.height=50
+target5.name=MyWorld
+target5.showInterface=false
+target5.type=ClassTarget
+target5.width=80
+target5.x=0
+target5.y=0
+>>>>>>> d74baa440ffa8dd387aa9f5ef27b20c8adee379d
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-xPosition=911
-yPosition=133
+xPosition=0
+yPosition=152
