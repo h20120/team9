@@ -1,10 +1,5 @@
 #Greenfoot project file
-<<<<<<< HEAD
-class.B.image=ppl1.png
-class.MyWorld.image=Image.jpg
-=======
 class.MyWorld.image=brick.jpg
->>>>>>> ffdd4e5ec68db93ea8356c145b886ba71a7572c6
 class.aaa.image=person.png
 class.f.image=flower2.png
 class.pp.image=Bekkamu.png
