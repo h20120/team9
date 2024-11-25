@@ -22,10 +22,10 @@ public class bekkamu extends Actor
         setRotation(-180);
         move(1);
     }if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(45);
+        setRotation(90);
         move(1);
     }if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(-45);
+        setRotation(-90);
         move(1);
     }
     }    
