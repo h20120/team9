@@ -21,6 +21,7 @@ public class bekkamu extends Actor
 
     public void act() 
     {
+<<<<<<< HEAD
           // 左右キーで移動
         if (Greenfoot.isKeyDown("left")) {
             move(-5);  // 左に5ピクセル移動
@@ -36,5 +37,21 @@ public class bekkamu extends Actor
         if (getX() > getWorld().getWidth() - 10) {
             setLocation(getWorld().getWidth() - 10, getY());
         }
+=======
+        // Add your action code here.
+        if( Greenfoot.isKeyDown( "right" ) ){
+        setRotation(0);
+        move(1);
+    }if( Greenfoot.isKeyDown( "left" ) ){
+        setRotation(-180);
+        move(1);
+    }if( Greenfoot.isKeyDown( "up" ) ){
+        setRotation(90);
+        move(1);
+    }if( Greenfoot.isKeyDown( "down" ) ){
+        setRotation(-90);
+        move(1);
+    }
+>>>>>>> f0af36ef1821ceba72313bed5c4ec0253977458e
     }    
 }
