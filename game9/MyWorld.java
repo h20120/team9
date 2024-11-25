@@ -18,5 +18,11 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject( new bekkamu(), 300, 200 );
+        for (int i = 0; i < 5; i++) {
+            RandomMover randomMover = new RandomMover();
+            // ランダムな位置に追加 (x座標: 0~599, y座標: 0~399)
+            addObject(randomMover, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
+        }
+        
     }
 }
