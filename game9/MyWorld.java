@@ -19,7 +19,16 @@ public class MyWorld extends World
         super(600, 400, 1); 
 <<<<<<< HEAD
         addObject( new bekkamu(), 300, 200 );
+<<<<<<< HEAD
         addObject( new aaa(), 300, 200 );
+=======
+        for (int i = 0; i < 5; i++) {
+            RandomMover randomMover = new RandomMover();
+            // ランダムな位置に追加 (x座標: 0~599, y座標: 0~399)
+            addObject(randomMover, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
+        }
+        
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
 =======
         int groundLevel = getHeight() - 40;  // 地面から少し上の高さを計算
         addObject(new bekkamu(), getWidth() / 2, groundLevel);  // ペンギンを中央に配置
