@@ -1,7 +1,11 @@
 #Greenfoot project file
 class.MyWorld.image=Image.jpg
+<<<<<<< HEAD
+class.aaa.image=miniature_orca_monster.png
+=======
 class.RandomMover.image=24509\ (2).png
 class.aaa.image=person.png
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
 class.bekkamu.image=Bekkamu.png
 class.f.image=flower2.png
 class.pp.image=Bekkamu.png
@@ -9,12 +13,26 @@ dependency1.from=MyWorld
 dependency1.to=bekkamu
 dependency1.type=UsesDependency
 dependency2.from=MyWorld
+<<<<<<< HEAD
+dependency2.to=aaa
+dependency2.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+=======
 dependency2.to=RandomMover
 dependency2.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=25
 editor.fx.0.y=211
+=======
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
+>>>>>>> 3a260934bd286836d6bc48fde25060301de4a494
 height=581
 package.numDependencies=2
 package.numTargets=8
@@ -40,7 +58,7 @@ target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=pp
+target2.name=B
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
@@ -54,14 +72,30 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=bekkamu
+=======
+<<<<<<< HEAD
+target4.name=koori
+=======
+target4.name=f
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
+>>>>>>> 3a260934bd286836d6bc48fde25060301de4a494
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=koori
+=======
+<<<<<<< HEAD
+target5.name=f
+=======
+target5.name=RandomMover
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
+>>>>>>> 3a260934bd286836d6bc48fde25060301de4a494
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
@@ -91,5 +125,15 @@ target8.y=0
 version=3.0.0
 width=878
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=836
 yPosition=288
+=======
+<<<<<<< HEAD
+xPosition=528
+yPosition=466
+=======
+xPosition=512
+yPosition=265
+>>>>>>> 5486471d725eafa753ebba803a611698edfd384b
+>>>>>>> 3a260934bd286836d6bc48fde25060301de4a494
