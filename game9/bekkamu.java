@@ -6,6 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
+
 public class bekkamu extends Actor
 {
     /**
@@ -14,6 +15,14 @@ public class bekkamu extends Actor
      */
     public void act() 
     {
+       
+        // ワールドの端を超えないようにする
+        if (getX() < 10) {
+            setLocation(10, getY());
+        }
+        if (getX() > getWorld().getWidth() - 10) {
+            setLocation(getWorld().getWidth() - 10, getY());
+        }
         // Add your action code here.
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
@@ -22,11 +31,15 @@ public class bekkamu extends Actor
         setRotation(-180);
         move(1);
     }if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(90);
-        move(1);
-    }if( Greenfoot.isKeyDown( "down" ) ){
         setRotation(-90);
         move(1);
+    }if( Greenfoot.isKeyDown( "down" ) ){
+        setRotation(90);
+        move(1);
     }
-    }    
+       
 }
+
+}
+
+    
