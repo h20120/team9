@@ -17,6 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+<<<<<<< HEAD
         addObject( new bekkamu(), 300, 200 );
         for (int i = 0; i < 5; i++) {
             RandomMover randomMover = new RandomMover();
@@ -24,5 +25,9 @@ public class MyWorld extends World
             addObject(randomMover, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
         }
         
+=======
+        int groundLevel = getHeight() - 40;  // 地面から少し上の高さを計算
+        addObject(new bekkamu(), getWidth() / 2, groundLevel);  // ペンギンを中央に配置
+>>>>>>> cdad9f8896307d47a061150063ba07bd8dc627b6
     }
 }
