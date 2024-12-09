@@ -9,7 +9,7 @@ public class RandomMover extends Actor
     public RandomMover()
     {
         // ランダムなスピードを設定（例えば、1～5の間）
-        speed = Greenfoot.getRandomNumber(5) + 1;
+        speed = Greenfoot.getRandomNumber(3) + 1;
         
         // ランダムな方向を設定（0～360度の間）
         direction = Greenfoot.getRandomNumber(360);

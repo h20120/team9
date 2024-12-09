@@ -13,10 +13,10 @@ public class bekkamu extends Actor
      * Act - do whatever the bekkamu wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
         getImage().scale( 55, 65 );
-       
         // ワールドの端を超えないようにする
         if (getX() < 10) {
             setLocation(10, getY());
@@ -26,20 +26,18 @@ public class bekkamu extends Actor
         }
         // Add your action code here.
         if( Greenfoot.isKeyDown( "right" ) ){
-        setRotation(0);
-        move(2);
-    }if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(-180);
-        move(2);
-    }if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(-90);
-        move(2);
-    }if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(90);
-        move(2);
+            setRotation(0);
+            move(3);
+        }if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(-180);
+            move(3);
+        }if( Greenfoot.isKeyDown( "up" ) ){
+            setRotation(-90);
+            move(3);
+        }if( Greenfoot.isKeyDown( "down" ) ){
+            setRotation(90);
+            move(3);
+        }
     }
-}
 
 }
-
-    
