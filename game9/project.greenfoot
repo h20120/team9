@@ -14,6 +14,7 @@ dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=RandomMover
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -21,6 +22,15 @@ editor.fx.0.y=0
 height=581
 package.numDependencies=3
 package.numTargets=6
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=1045
+editor.fx.0.y=216
+height=581
+package.numDependencies=3
+package.numTargets=8
+>>>>>>> b20923bbe4d0b1eab4937472ae1e56e8160de807
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -57,14 +67,22 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=f
+=======
+target4.name=bekkamu
+>>>>>>> b20923bbe4d0b1eab4937472ae1e56e8160de807
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=RandomMover
+=======
+target5.name=koori
+>>>>>>> b20923bbe4d0b1eab4937472ae1e56e8160de807
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=100
@@ -80,5 +98,10 @@ target6.y=0
 version=3.0.0
 width=878
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=512
 yPosition=265
+=======
+xPosition=978
+yPosition=235
+>>>>>>> b20923bbe4d0b1eab4937472ae1e56e8160de807
