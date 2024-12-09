@@ -21,23 +21,21 @@ public class bekkamu extends Actor
         if (getX() < 10) {
             setLocation(10, getY());
         }
-        if (getX() > getWorld().getWidth() - 10) {
-            setLocation(getWorld().getWidth() - 10, getY());
-        }
         // Add your action code here.
+        int x = getX();
+        int y = getY();
+        if( Greenfoot.isKeyDown( "left" ) ){
+           setLocation( x-1,y );
+        }
         if( Greenfoot.isKeyDown( "right" ) ){
-        setRotation(0);
-        move(2);
-    }if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(-180);
-        move(2);
-    }if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(-90);
-        move(2);
-    }if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(90);
-        move(2);
-    }
+           setLocation( x+1,y );
+        }
+        if( Greenfoot.isKeyDown( "up" ) ){
+           setLocation( x,y-1 );
+        }
+        if( Greenfoot.isKeyDown( "down" ) ){
+           setLocation( x,y+1 );
+        }
 }
 
 }
