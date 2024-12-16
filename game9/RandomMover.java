@@ -19,7 +19,7 @@ public class RandomMover extends Actor
     {
         // ランダムな方向に移動する
         move();
-        getImage().scale( 120, 120 );
+        getImage().scale( 80, 80 );
     }
 
     // 方向に従って動かす

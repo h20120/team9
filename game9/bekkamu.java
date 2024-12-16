@@ -16,7 +16,7 @@ public class bekkamu extends Actor
     
     public void act() 
     {
-        getImage().scale( 55, 65 );
+        getImage().scale( 60, 75 );
         // ワールドの端を超えないようにする
         if (getX() < 10) {
             setLocation(10, getY());
@@ -28,7 +28,6 @@ public class bekkamu extends Actor
            setLocation( x-1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-<<<<<<< HEAD
             setRotation(0);
             move(3);
         }if( Greenfoot.isKeyDown( "left" ) ){
@@ -42,16 +41,4 @@ public class bekkamu extends Actor
             move(3);
         }
     }
-=======
-           setLocation( x+1,y );
-        }
-        if( Greenfoot.isKeyDown( "up" ) ){
-           setLocation( x,y-1 );
-        }
-        if( Greenfoot.isKeyDown( "down" ) ){
-           setLocation( x,y+1 );
-        }
-}
->>>>>>> b20923bbe4d0b1eab4937472ae1e56e8160de807
-
-}
+   }
