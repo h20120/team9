@@ -16,7 +16,6 @@ public class bekkamu extends Actor
     public void act() 
     {
         getImage().scale( 55, 65 );
-       
         // ワールドの端を超えないようにする
         if (getX() < 10) {
             setLocation(10, getY());

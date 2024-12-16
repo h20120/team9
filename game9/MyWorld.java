@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+  import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class MyWorld here.
@@ -13,10 +13,22 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    private int timer = 3000;
+    private int counter = 0;
+    private int i = 0;
+    public void act() {
+        timer--;
+        counter++;
+        i = timer / 100; 
+        if((counter % 100) == 0 ){
+            showText(""+i, 50, 50);
+        }   
+        if (timer <= 0) {
+            Greenfoot.stop(); // pause the execution of the program if 'timer' is less than or equal to 0
+        }
+    }
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-
         super(600, 400, 1); 
         addObject( new bekkamu(), 300, 200 );
         addObject( new aaa(), 300, 200 );
@@ -27,4 +39,5 @@ public class MyWorld extends World
         }
         int groundLevel = getHeight() - 40;  // 地面から少し上の高さを計算
     }
+    
 }
