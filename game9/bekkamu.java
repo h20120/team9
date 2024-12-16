@@ -40,5 +40,12 @@ public class bekkamu extends Actor
             setRotation(90);
             move(3);
         }
+        Actor enemy = getOneIntersectingObject(RandomMover.class);
+        if (enemy != null) {
+        // 敵との衝突があった場合
+        System.out.println("敵と衝突しました！");
+        Greenfoot.stop();
+        // 衝突時の処理（例えば、ライフが減るなど）
+        }
     }
    }
