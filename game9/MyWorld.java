@@ -29,14 +29,26 @@ public class MyWorld extends World
     }
     public MyWorld()
     {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject( new bekkamu(), 300, 200 );
         addObject( new aaa(), 300, 200 );
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             RandomMover randomMover = new RandomMover();
             // ランダムな位置に追加 (x座標: 0~599, y座標: 0~399)
-            addObject(randomMover, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
+            addObject(randomMover, Greenfoot.getRandomNumber(600), 5);
         }
+        for (int i = 0; i < 1; i++) {
+            RandomMover randomMover = new RandomMover();
+            // ランダムな位置に追加 (x座標: 0~599, y座標: 0~399)
+            addObject(randomMover, 580, 380);
+        }
+        for (int i = 0; i < 2; i++) {
+            RandomMover randomMover = new RandomMover();
+            // ランダムな位置に追加 (x座標: 0~599, y座標: 0~399)
+            addObject(randomMover, 5, Greenfoot.getRandomNumber(400));
+        }
+
         int groundLevel = getHeight() - 40;  // 地面から少し上の高さを計算
     }
     

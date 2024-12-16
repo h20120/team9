@@ -13,9 +13,11 @@ public class bekkamu extends Actor
      * Act - do whatever the bekkamu wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
         getImage().scale( 55, 65 );
+        getImage().scale( 60, 75 );
         // ワールドの端を超えないようにする
         if (getX() < 10) {
             setLocation(10, getY());
@@ -27,16 +29,24 @@ public class bekkamu extends Actor
            setLocation( x-1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-           setLocation( x+1,y );
+            setRotation(0);
+            move(3);
+        }if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(-180);
+            move(3);
+        }if( Greenfoot.isKeyDown( "up" ) ){
+            setRotation(-90);
+            move(3);
+        }if( Greenfoot.isKeyDown( "down" ) ){
+            setRotation(90);
+            move(3);
         }
-        if( Greenfoot.isKeyDown( "up" ) ){
-           setLocation( x,y-1 );
+        Actor enemy = getOneIntersectingObject(RandomMover.class);
+        if (enemy != null) {
+        // 敵との衝突があった場合
+        System.out.println("敵と衝突しました！");
+        Greenfoot.stop();
+        // 衝突時の処理（例えば、ライフが減るなど）
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
-           setLocation( x,y+1 );
-        }
-}
-
-}
-
-    
+    }
+   }
