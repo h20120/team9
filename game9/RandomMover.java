@@ -20,6 +20,9 @@ public class RandomMover extends Actor
         // ランダムな方向に移動する
         move();
         getImage().scale( 80, 80 );
+        
+        // 衝突判定を実行
+        checkCollision();
     }
 
     // 方向に従って動かす
@@ -29,6 +32,7 @@ public class RandomMover extends Actor
         setRotation(direction);
         move(speed);
 
+     
         // 壁に当たったら反射する
         if (isAtEdge())
         {
@@ -41,5 +45,16 @@ public class RandomMover extends Actor
         {
             direction = Greenfoot.getRandomNumber(360);  // 新しいランダムな方向を設定
         }
+    }
+    
+    // 衝突判定の処理
+    public void checkCollision()
+    {
+        // aaaクラスのオブジェクトと衝突した場合
+        Actor enemy = getOneIntersectingObject(aaa.class);
+        if (enemy != null) {
+            // このオブジェクト（RandomMover）を削除
+            getWorld().removeObject(this);
+       }
     }
 }
