@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MyWorld extends World
 {
-    private int timer = 3000; // ゲームタイマー（3秒のカウントダウン）
+    private int timer = 2000; // ゲームタイマー（20秒のカウントダウン）
     private int counter = 0; // フレームカウント用
     private int i = 0; // タイマーの表示用
     private int spawnTimer = 0; // 生成間隔カウント用（1000フレームごとに生成）
